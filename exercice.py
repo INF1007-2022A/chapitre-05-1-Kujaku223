@@ -6,24 +6,38 @@ from typing import List
 
 
 def convert_to_absolute(number: float) -> float:
-    return 0
+        if number < 0:
+            return -1* number
+       # return abs(number)
+    return number
+
 
 
 def use_prefixes() -> List[str]:
     prefixes, suffixe = 'JKLMNOPQ', 'ack'
-
-    return [""]
-
+    SPACE = ' '
+    noms = ''
+    for lettre in prefixes:
+        nom+= f"(lettre){suffixe}"
+    return nom.split()
+print (use_prefixes())
 
 def prime_integer_summation() -> int:
     return 0
 
 
 def factorial(number: int) -> int:
-    return 0
+    for i in range(2, nombre):
+    number *= i
+    print(number)
+    return number
 
 
 def use_continue() -> None:
+    or i in range(1, 10 + 1):
+    if i == 5:
+        continue
+    print(i)
     pass
 
 
@@ -52,7 +66,24 @@ def main() -> None:
     ]
     print(f"Les différents groupes sont: {groups}")
     print(f"L'acceptance des groupes est: {verify_ages(groups)}")
-
+SPACE = " "
+result = ""
+for groupe  in groupes:
+    print(groupe)
+    if len(groupe)>10 or len(groupe)<3:
+        result += str(False) + SPACE
+        continue
+    if 25 in groupe:
+        result += str(True) + SPACE
+        continue
+    if min(groupe) < 18:
+        result += str(False) + SPACE
+        continue
+    if max(groupe)>70 and 50 in groupe:
+        result += str(False) + SPACE
+        continue
+    return result += str.split()
+print verify_ages(groupes))
 
 if __name__ == '__main__':
     main()
